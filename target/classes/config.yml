@@ -1,0 +1,41 @@
+# ─────────────────────────────────────────
+#  PREFIX (affiché avant chaque message du plugin)
+#  Supporte les balises MiniMessage
+# ─────────────────────────────────────────
+prefix: "<bold><gradient:#2e2e2e:#660000>✦ ExclusionZ ✦</gradient></bold><gray> »</gray>"
+
+# ─────────────────────────────────────────
+#  MOTD (message affiché dans la liste des serveurs)
+#  Supporte les balises MiniMessage : https://docs.advntr.dev/minimessage/format.html
+# ─────────────────────────────────────────
+motd:
+  line1: "        <bold><gradient:#2e2e2e:#660000>✦ ExclusionZ ✦</gradient></bold>"
+  line2: "   <dark_gray>»</dark_gray> <gray><italic>Une expérience unique</italic></gray> <dark_gray>«</dark_gray>"
+
+# ─────────────────────────────────────────
+#  MAINTENANCE
+# ─────────────────────────────────────────
+maintenance:
+  # Ne pas modifier manuellement, géré automatiquement par /maintenance
+  enabled: false
+  motd:
+    line1: "        <bold><gradient:#2e2e2e:#660000>✦ ExclusionZ ✦</gradient></bold>"
+    line2: "   <dark_gray>»</dark_gray> <red><italic>Serveur temporairement indisponible</italic></red> <dark_gray>«</dark_gray>"
+  # Message affiché au joueur bloqué à la connexion (MiniMessage)
+  kick-message: "<red><bold>Serveur en maintenance</bold></red>\n<yellow>Revenez plus tard !"
+  # Message envoyé aux joueurs kickés automatiquement quand la maintenance s'active
+  kick-broadcast: "<red>Le serveur passe en maintenance. Vous avez été déconnecté."
+
+# ─────────────────────────────────────────
+#  UPDATE CHECKER
+# ─────────────────────────────────────────
+update-checker:
+  # Active ou desactive la verification des mises a jour au demarrage
+  enabled: true
+  # Telecharge automatiquement la mise a jour dans plugins/update/
+  # Paper applique la mise a jour au prochain redemarrage du serveur
+  auto-download: true
+  # Depot GitHub sous la forme "OWNER/REPO" (ex: "LeuthioOrg/ExclusionZ")
+  github-repo: "LeuthioCode/ExclusionZ"
+  # Notifie les admins (exclusionz.admin) a leur connexion si une MAJ est disponible
+  notify-on-join: true

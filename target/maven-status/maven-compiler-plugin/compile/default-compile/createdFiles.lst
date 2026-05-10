@@ -1,0 +1,7 @@
+fr\leuthio\exclusionz\ExclusionZPlugin.class
+fr\leuthio\exclusionz\maintenance\MaintenanceManager.class
+fr\leuthio\exclusionz\maintenance\MaintenanceCommand.class
+fr\leuthio\exclusionz\update\UpdateChecker.class
+fr\leuthio\exclusionz\listener\MaintenanceListener.class
+fr\leuthio\exclusionz\listener\MotdListener.class
+fr\leuthio\exclusionz\listener\PlayerConnectionListener.class
