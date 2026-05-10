@@ -1,0 +1,23 @@
+name: ExclusionZ
+version: ${project.version}
+main: fr.leuthio.exclusionz.ExclusionZPlugin
+api-version: '1.21'
+author: Leuthio
+description: Plugin Officiel de ExclusionZ
+
+commands:
+  maintenance:
+    description: Gere le mode maintenance du serveur.
+    usage: /<command> [on|off|status]
+    permission: exclusionz.maintenance
+
+permissions:
+  exclusionz.admin:
+    description: Acces aux notifications de mise a jour.
+    default: op
+  exclusionz.maintenance:
+    description: Acces a la commande /maintenance.
+    default: op
+  exclusionz.maintenance.bypass:
+    description: Peut se connecter meme en mode maintenance.
+    default: op
